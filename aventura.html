@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <link rel="stylesheet" href="aventura.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dia bonito</title>
+</head>
+
+<body>
+    <main>
+        <div class="passo ativo" id="passo-0">
+            <img src="img/dia.jpg">
+            <p>Bom dia! É uma nova manhã, e parece que o dia será diferente hoje. Bem, o que será que posso fazer hoje?
+            </p>
+            <button class="btn-proximo" data-proximo="1">Passear no parque</button>
+            <button class="btn-proximo" data-proximo="2">Ficar em casa</button>
+        </div>
+
+            <div class="passo" id="passo-2">
+                <img src="img/casa.jpg" alt="">
+                    <p>Você simplesmente resolve ficar em casa fazendo nada.</p>
+                    <button class="btn-proximo" data-proximo="0">voltar</button>
+            </div>
+
+
+            <div class="passo" id="passo-1">
+                <img src="img/ponto.jpg" alt="">
+                <p>No caminho para o parque, você vê que o ônibus que ia pegar acabou de passar, o que devo fazer?</p>
+                <button class="btn-proximo" data-proximo="3">Esperar outro</button>
+                <button class="btn-proximo" data-proximo="4">Ir caminhando</button>
+            </div>
+
+            <div class="passo" id="passo-3">
+                <img src="img/onibus.jpeg" alt="">
+                <p>Seu ônibus chega pouco tempo depois e você já está no parque</p>
+                <button class="btn-proximo" data-proximo="5">continuar</button>
+            </div>
+
+            <div class="passo" id="passo-4">
+                <img src="img/rua.jpg" alt="">
+                <p>você faz uma longa caminhada, mas valeu o exercício, você chega no destino sem problema algum.</p>
+                <button class="btn-proximo" data-proximo="5">continuar</button>
+            </div>
+
+            <div class="passo" id="passo-5">
+                <img src="img/chuva.jpg" alt="">
+                <p>você curte o dia, mas na volta pra casa está chovendo muito, o que posso fazer?</p>
+                <button class="btn-proximo" data-proximo="6">Chamar um táxi</button>
+                <button class="btn-proximo" data-proximo="7">Esperar em um ponto seguro</button>
+                <button class="btn-proximo" data-proximo="8">Ir na chuva</button>
+            </div>
+
+            <div class="passo" id="passo-6">
+                <img src="img/taxi.jpg" alt="">
+                <p>você tenta chamar um, mas nenhum aparece no local, que então só resta esperar passar.</p>
+                <button class="btn-proximo" data-proximo="7">continuar</button>
+            </div>
+
+            <div class="passo" id="passo-7">
+                <img src="img/passar.jpg" alt="">
+                <p>Depois de esperar, a chuva passa e você volta pra casa tranquilamente.</p>
+                <button class="btn-proximo" data-proximo="0">voltar</button>
+            </div>
+
+            <div class="passo" id="passo-8">
+                <img src="img/ir.jpg" alt="">
+                <p>você chega em casa cansado, e percebe que ficou resfriado, mas valeu o seu dia.</p>
+                <button class="btn-proximo" data-proximo="0">voltar</button>
+            </div>
+
+
+    </main>
+    <script src="aventura.js"></script>
+
+</body>
+
+</html>
